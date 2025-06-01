@@ -37,6 +37,7 @@ ol li {
   padding-bottom: 8px;
   margin-right: 20px;
   margin-left: 20px;
+  color: #000000;
 }
 
 .contend {
@@ -181,8 +182,8 @@ ol li {
   color: #ffffff;
   background-color: #1a2ccf;
   border-radius: 18px;
-  padding-right: 18px;
-  padding-left: 18px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 .item h2 {
   font-size: 28px;
@@ -225,6 +226,7 @@ ol li {
   text-align: center;
   padding-top: 12px;
   padding-bottom: 12px;
+  color: #4c4c4c;
 }
 .pagelink ol {
   margin-top: 6px;
