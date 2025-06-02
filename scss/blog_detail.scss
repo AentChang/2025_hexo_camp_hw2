@@ -23,7 +23,12 @@ ol {
         display: inline;
     }
 }
-
+h2 {
+    color: #1a2ccf;
+}
+h3{
+    color: #000;
+}
 .header {
     display: flex;
     flex-wrap: wrap;
@@ -58,39 +63,11 @@ ol {
     margin-bottom: 80px;
 
     .banner_content1 {
-        max-width: 50%;
+        max-width:49.5% ;//948px
     }
 
     .banner_content2 {
-        width: 50%;
-        color: #1a2ccf;
-        font-weight: bold;
-        line-height: 1.5;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
-        h1 {
-            font-size: 120px;
-            margin-left: 80px;
-            margin-bottom: 12px;
-        }
-
-        h2 {
-            font-size: 28px;
-            margin-left: 80px;
-            margin-bottom: 24px;
-        }
-
-        background-image: url("../img/desktop/index/Hero Section2.png");
-    }
-
-    .banner_content3 {
-        max-width: 49%;
-    }
-
-    .banner_content4 {
-        width: 50%;
+        width: 49.5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -107,20 +84,11 @@ ol {
         flex-direction: column;
         align-items: center;
 
-
         .banner_content1 {
             max-width: 100%;
         }
 
         .banner_content2 {
-            width: 100%;
-        }
-
-        .banner_content3 {
-            max-width: 100%;
-        }
-
-        .banner_content4 {
             width: 100%;
         }
     }
@@ -262,6 +230,7 @@ ol {
     ol {
         margin-top: 6px;
         margin-bottom: 6px;
+
         li {
             display: inline;
         }
@@ -296,6 +265,7 @@ ol {
         text-align: center;
         margin-top: 24px;
         margin-bottom: 24px;
+
     }
 
 }
