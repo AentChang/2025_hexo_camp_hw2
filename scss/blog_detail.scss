@@ -12,6 +12,7 @@ img {
 
 body {
     margin: 0 auto;
+    line-height: 1.5;
 }
 
 a {
@@ -19,6 +20,8 @@ a {
 }
 
 .header {
+    max-width: 1296px;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,6 +37,10 @@ a {
         margin-right: 20px;
         margin-left: 20px;
         color: #000000;
+
+        &:hover {
+            color: #1a2ccf;
+        }
     }
 }
 
@@ -51,11 +58,11 @@ a {
     justify-content: space-between;
     margin-bottom: 80px;
 
-    .banner_content1 {
+    .block-1 {
         max-width: 49.5%; //948px
     }
 
-    .banner_content2 {
+    .block-2 {
         width: 49.5%;
         display: flex;
         flex-direction: column;
@@ -69,14 +76,15 @@ a {
         flex-direction: column;
         align-items: center;
 
-        .banner_content1 {
+        .block-1 {
             max-width: 100%;
         }
 
-        .banner_content2 {
+        .block-2 {
             width: 100%;
         }
     }
+
     .detail {
         padding-left: 12px;
         padding-right: 12px;
@@ -85,7 +93,6 @@ a {
 
 .detail {
     max-width: 636px;
-    line-height: 1.5;
     font-weight: bolder;
 
     h2 {
@@ -122,6 +129,10 @@ a {
         }
     }
 
+    a:hover {
+        font-weight: bold;
+    }
+
     .tips {
         font-weight: bold;
         background-color: #ededed;
@@ -141,15 +152,15 @@ a {
         text-decoration: underline;
     }
 
-    .mb_style1 {
+    .mb_style_s {
         margin-bottom: 8px;
     }
 
-    .mb_style2 {
+    .mb_style_m {
         margin-bottom: 24px;
     }
 
-    .mb_style3 {
+    .mb_style_l {
         margin-bottom: 48px;
     }
 }
@@ -160,7 +171,6 @@ a {
     margin-bottom: 40px;
     margin-right: 12px;
     margin-left: 12px;
-    line-height: 1.5;
 
     time {
         display: block;
@@ -216,6 +226,11 @@ a {
         border-radius: 40px;
         padding-left: 19px;
         padding-right: 19px;
+
+        &:hover {
+            color: #ffffff;
+            background-color: #4c4c4c;
+        }
     }
 
     img {
@@ -250,6 +265,10 @@ a {
             font-size: 32px;
             line-height: 1.5;
             color: #000000;
+
+            &:hover {
+                color: #1a2ccf;
+            }
         }
 
         @media (max-width:767px) {

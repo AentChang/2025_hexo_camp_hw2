@@ -1,7 +1,7 @@
 .noto-sans-tc-web {
   font-family: "Noto Sans TC", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 100;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -12,17 +12,19 @@ img {
 
 body {
   margin: 0 auto;
+  line-height: 1.5;
 }
 
 a {
   text-decoration: none;
 }
 
-ol li {
+ul li {
   display: inline;
 }
 
 .header {
+  max-width: 1296px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -31,13 +33,14 @@ ol li {
 }
 .header a {
   font-size: 28px;
-  font-weight: bold;
-  line-height: 1.5;
   padding-top: 8px;
   padding-bottom: 8px;
   margin-right: 20px;
   margin-left: 20px;
   color: #000000;
+}
+.header a:hover {
+  color: #1a2ccf;
 }
 
 .content {
@@ -52,68 +55,82 @@ ol li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 80px;
 }
-.banner .banner_content1 {
+.banner .block-1 {
   max-width: 50%;
 }
-.banner .banner_content2 {
+.banner .block-2 {
   width: 50%;
   color: #1a2ccf;
   font-weight: bold;
-  line-height: 1.5;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   background-image: url("../img/desktop/index/Hero Section2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
-.banner .banner_content2 h1 {
+.banner .block-2 h1 {
   font-size: 120px;
-  margin-left: 80px;
-  margin-bottom: 12px;
+  padding-left: 80px;
+  padding-bottom: 12px;
 }
-.banner .banner_content2 h2 {
+.banner .block-2 h2 {
   font-size: 28px;
-  margin-left: 80px;
-  margin-bottom: 24px;
+  padding-left: 80px;
+  padding-bottom: 24px;
 }
-.banner .banner_content3 {
+.banner .block-3 {
   max-width: 49%;
 }
-.banner .banner_content4 {
+.banner .block-4 {
   width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.banner .banner_content4 .item {
+.banner .block-4 .item {
   max-width: 636px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 879px) {
   .banner {
     flex-direction: column;
     align-items: center;
   }
-  .banner .banner_content1 {
+  .banner .block-1 {
     max-width: 100%;
   }
-  .banner .banner_content2 {
+  .banner .block-2 {
     width: 100%;
   }
-  .banner .banner_content3 {
+  .banner .block-2 h1 {
+    font-size: 52px;
+    padding-left: 24px;
+  }
+  .banner .block-2 h2 {
+    padding-left: 24px;
+  }
+  .banner .block-3 {
     max-width: 100%;
   }
-  .banner .banner_content4 {
-    width: 100%;
+  .banner .block-4 {
+    max-width: 100%;
+  }
+  .banner .block-4 .item {
+    max-width: 879px;
   }
 }
 .bloglist {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin: 0 auto;
 }
-.bloglist ol {
+.bloglist ul {
   max-width: 1320px;
   display: flex;
   flex-wrap: wrap;
@@ -121,12 +138,12 @@ ol li {
   margin: 0 auto;
 }
 @media (max-width: 1319px) {
-  .bloglist ol {
+  .bloglist ul {
     max-width: 880px;
   }
 }
 @media (max-width: 879px) {
-  .bloglist ol {
+  .bloglist ul {
     max-width: 440px;
   }
 }
@@ -170,37 +187,29 @@ ol li {
 }
 .item .tag {
   font-size: 24px;
-}
-.item .tag ol {
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-.item .tag li {
-  margin-right: 8px;
+  color: #1a2ccf;
 }
 .item .tag .pop {
   color: #ffffff;
   background-color: #1a2ccf;
+  font-size: 16px;
   border-radius: 18px;
   padding-right: 12px;
   padding-left: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 .item h2 {
   font-size: 28px;
-  font-weight: bold;
-  line-height: 1.5;
   margin-bottom: 8px;
 }
 .item p {
-  font-size: 16px;
   color: #4c4c4c;
-  line-height: 1.5;
   margin-bottom: 36px;
   overflow: hidden;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
-  text-overflow: hidden;
 }
 .item .link {
   border: 1px solid #808080;
@@ -211,6 +220,10 @@ ol li {
   padding-left: 10px;
   border-radius: 20px;
 }
+.item .link:hover {
+  color: #ffffff;
+  background-color: #4c4c4c;
+}
 
 .pagelink {
   text-align: center;
@@ -219,6 +232,7 @@ ol li {
   padding-top: 8px;
   padding-bottom: 8px;
   display: flex;
+  flex-wrap: wrap;
 }
 .pagelink a {
   display: block;
@@ -228,11 +242,14 @@ ol li {
   padding-bottom: 12px;
   color: #4c4c4c;
 }
-.pagelink ol {
+.pagelink a:hover {
+  color: #1a2ccf;
+}
+.pagelink ul {
   margin-top: 6px;
   margin-bottom: 6px;
 }
-.pagelink ol li {
+.pagelink ul li {
   display: inline;
 }
 
@@ -250,8 +267,10 @@ ol li {
 }
 .fooder .fooderlink a {
   font-size: 32px;
-  line-height: 1.5;
   color: #000000;
+}
+.fooder .fooderlink a:hover {
+  color: #1a2ccf;
 }
 @media (max-width: 767px) {
   .fooder .fooderlink {
