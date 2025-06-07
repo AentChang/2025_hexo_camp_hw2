@@ -25,6 +25,7 @@ ul li {
 
 .header {
   max-width: 1296px;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -55,6 +56,7 @@ ul li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 80px;
 }
 .banner .block-1 {
   max-width: 50%;
@@ -69,18 +71,23 @@ ul li {
   flex-wrap: wrap;
   background-image: url("../img/desktop/index/Hero Section2.png");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
+.banner .block-2 h1,
+.banner .block-2 h2 {
+  padding-left: 80px;
+  padding-right: 20px;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
 .banner .block-2 h1 {
   font-size: 120px;
-  padding-left: 80px;
   padding-bottom: 12px;
 }
 .banner .block-2 h2 {
   font-size: 28px;
-  padding-left: 80px;
   padding-bottom: 24px;
 }
 .banner .block-3 {
@@ -100,6 +107,7 @@ ul li {
   .banner {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 64px;
   }
   .banner .block-1 {
     max-width: 100%;
@@ -118,7 +126,7 @@ ul li {
     max-width: 100%;
   }
   .banner .block-4 {
-    max-width: 100%;
+    width: 100%;
   }
   .banner .block-4 .item {
     max-width: 879px;
@@ -186,24 +194,36 @@ ul li {
   padding-bottom: 6px;
 }
 .item .tag {
+  display: flex;
+  flex-wrap: wrap;
   font-size: 24px;
   color: #1a2ccf;
+}
+.item .tag a,
+.item .tag span {
+  display: block;
+  margin-right: 8px;
+}
+.item .tag a:hover {
+  font-weight: bold;
 }
 .item .tag .pop {
   color: #ffffff;
   background-color: #1a2ccf;
   font-size: 16px;
   border-radius: 18px;
-  padding-right: 12px;
-  padding-left: 12px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding: 6px 12px;
+}
+.item .tag .pop:hover {
+  color: #1a2ccf;
+  background-color: #ffffff;
+  outline: 1px solid #1a2ccf;
 }
 .item h2 {
   font-size: 28px;
   margin-bottom: 8px;
 }
-.item p {
+.item .summary {
   color: #4c4c4c;
   margin-bottom: 36px;
   overflow: hidden;
@@ -214,10 +234,7 @@ ul li {
 .item .link {
   border: 1px solid #808080;
   color: #4c4c4c;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding: 7px 10px;
   border-radius: 20px;
 }
 .item .link:hover {
@@ -227,10 +244,7 @@ ul li {
 
 .pagelink {
   text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 20px;
   display: flex;
   flex-wrap: wrap;
 }
