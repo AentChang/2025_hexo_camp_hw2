@@ -145,12 +145,12 @@ ul li {
   justify-content: flex-start;
   margin: 0 auto;
 }
-@media (max-width: 1319px) {
+@media (max-width: 1334px) {
   .bloglist ul {
     max-width: 880px;
   }
 }
-@media (max-width: 879px) {
+@media (max-width: 894px) {
   .bloglist ul {
     max-width: 440px;
   }
@@ -164,6 +164,7 @@ ul li {
 .search {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 .search .searchitem {
   display: flex;
@@ -176,6 +177,14 @@ ul li {
   width: 262px;
   border: none;
   outline: none;
+}
+@media (max-width: 894px) {
+  .search .searchitem {
+    flex: 1 1 100%;
+  }
+  .search .searchitem input {
+    width: 100%;
+  }
 }
 
 .item {
